@@ -109,4 +109,71 @@ html, body {
 
 /* 5. AJUSTES MÓVIL */
 @media only screen and (max-width: 600px) {
+
+/* ==========================================================================
+   SECCIÓN DE NAVEGACIÓN ENTRE PROYECTOS
+   ========================================================================== */
+
+.related-projects {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0; /* Una línea sutil para separar */
+    padding-top: 40px;
+}
+
+.related-projects h2 {
+    color: #523627;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+.nav-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre los botones */
+    flex-wrap: wrap; /* Para que se adapte a móviles */
+}
+
+.project-link-card {
+    background-color: #ffffff;
+    border: 2px solid #AB7743; /* Borde color tierra medio */
+    border-radius: 8px;
+    padding: 20px 30px;
+    width: 300px;
+    text-decoration: none; /* Quita el subrayado azul feo */
+    transition: all 0.3s ease; /* Suaviza la animación al pasar el mouse */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.project-link-card h3 {
+    margin: 0;
+    color: #523627;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+/* Efecto al pasar el mouse por encima (Hover) */
+.project-link-card:hover {
+    background-color: #f4d6b2; /* Fondo beige claro */
+    transform: translateY(-5px); /* Se levanta un poco */
+    box-shadow: 0 5px 15px rgba(82, 54, 39, 0.2);
+    border-color: #6D3914;
+}
+
+/* Ajuste para móviles */
+@media only screen and (max-width: 600px) {
+    .nav-links-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-link-card {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
     .
